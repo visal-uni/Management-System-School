@@ -9,36 +9,36 @@ namespace Management_System_School
     internal class Student
     {
         private static int conuter = 0;
-        private string StdId;
-        private string stdName;
-        public string StdName
+        private string Id;
+        private string name;
+        public string Name
         {
-            get => stdName;
-            set => stdName = value ?? throw new ArgumentNullException(nameof(value));
+            get => name;
+            set => name = value ?? throw new ArgumentNullException(nameof(value));
         }
-        private int stdAge;
-        public int StdAge
+        private int age;
+        public int Age
         {
-            get => stdAge;
+            get => age;
             set
             {
                 if (value < 18)
                     throw new ArgumentOutOfRangeException(nameof(value));
-                StdAge = value;
+                age = value;
             }
         }
-        private string stdAddress;
-        public string StdAddress
+        private string address;
+        public string Address
         {
-            get => stdAddress;
-            set => stdAddress = value ?? throw new ArgumentNullException(nameof(value));
+            get => address;
+            set => address = value ?? throw new ArgumentNullException(nameof(value));
         }
-        public Student(string StdName, int StdAge, string StdAddress, Department dept)
+        public Student(string Name, int Age, string Address, Department dept)
         {
-            StdId = $"ST {++conuter:D3}";
-            this.StdName = StdName;
-            this.StdAge = StdAge;
-            this.StdAddress = StdAddress;
+            Id = $"ST {++conuter:D3}";
+            this.Name = Name;
+            this.Age = Age;
+            this.Address = Address;
             this.Department = dept;
         }
         public Department Department { get; private set; }
