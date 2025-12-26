@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Management_System_School
 {
-    internal class Professor
+    internal class Teacher
     {
     }
 }

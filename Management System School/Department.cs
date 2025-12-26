@@ -22,6 +22,6 @@ namespace Management_System_School
             this.DeptName = DeptName ?? throw new ArgumentNullException(nameof(DeptName));
         }
         List<Student> students = new List<Student>();
-        List<Professor> professors = new List<Professor>();
+        List<Teacher> professors = new List<Teacher>();
     }
 }
