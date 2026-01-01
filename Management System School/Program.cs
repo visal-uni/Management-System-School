@@ -10,6 +10,7 @@ namespace Management_System_School
     {
         static void Main(string[] args)
         {
+            new University();
         }
     }
 }

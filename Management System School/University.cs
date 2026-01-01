@@ -8,5 +8,6 @@ namespace Management_System_School
 {
     internal class University
     {
+
     }
 }

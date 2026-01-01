@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Management_System_School
 {
-    internal class Student
+    internal abstract class Student
     {
         private static int conuter = 0;
         private string Id;
@@ -41,6 +41,6 @@ namespace Management_System_School
             this.Address = Address;
             this.Department = dept;
         }
-        public Department Department { get; private set; }
+        public abstract Department Department { get; set; }
     }
 }
